@@ -1,0 +1,17 @@
+<html>
+  <head></head>
+  <body>
+    <div>SHOULD BE SHOWN</div>
+    <div id="expired">SHOULD BE HIDDEN</div>
+    <div id="placeholder">PLACEHOLDER AFTER HIDE - can be placed anywhere</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="dirge.js"></script>
+    <script>
+      $('#expired').dirge({
+        expires: '2016-04-01',
+        replaceWith: $('#placeholder')
+      });
+    </script>
+  </body>
+</html>
