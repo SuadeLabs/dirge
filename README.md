@@ -9,3 +9,8 @@ $('#expired').dirge({
   replaceWith: $('#placeholder')
 });
 ```
+
+## Todo
+
+- Support `data-start` and `data-end` HTML attributes to override defaults
+  given when calling `$.dirge`.
